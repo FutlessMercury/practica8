@@ -1,0 +1,118 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #F2F2F2;
+}
+
+.areaprincipal
+{
+    background-image: url(../imagenes/fondo.jpg); /* agragando imagen de fondo*/
+    background-repeat: repeat-y;/* permitir que se repita el fondo o no*/
+    width: 100%;
+    height: auto;
+    opacity: 0.7; /* opacidad de la imagen*/
+    -webkit-background-size:100% 100%;
+    /* Safari 3.0*/
+    -moz-background-size:100% 100%;
+    /* Firefox 3.6*/
+    -o-background-size:100% 100%;
+    /* others browsers*/
+    background-size:100% 100%;
+}
+
+#encabezado
+{
+    background:#F2778D ;
+    height: 240px;
+    text-align: center;
+    background-image: url(../imagenes/logo.png);
+    background-repeat: no-repeat;
+    background-size: 1100px 180px;/*ancho alto de la imagen*/
+}
+
+.piedepagina
+{
+    width: 100%;/* ancho*/
+    height:100px;/* alto*/
+    background: #03658C;/* color de fondo*/
+    color:#F2F2F2;/* color de letra de la clase*/
+    bottom:0;/* espacio de separación parte inferior*/
+    position:relative;/* originalmente en fixed pero se tuvo que modificar*/
+    left: 0; /* Alineacion de contenidos a la izquierda*/
+
+}
+
+#menu
+{
+    height: 40px;
+    position:relative;
+    top:200px;
+}
+
+
+ul
+{
+    list-style-type:none; 
+    margin:10px; /* original era 0 pero puse 10 para una separacion de 10 px entre*/
+    padding:0;
+    overflow: hidden;
+    background-color: #D91448;
+}
+
+li
+{
+    float:left;
+}
+li a 
+{
+    display:block;
+    color:#F2F2F2;
+    text-align: center;
+    padding:10px;
+    text-decoration:none;
+}
+
+li a:hover
+{
+    background-color: #03658C;
+
+}
+
+#datos
+{
+    width:80%;
+    background-color: #F2F2F2;
+    height:600px;
+    margin:auto;
+    opacity:1;
+    color:#D91448;/* color de letra*/
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+
+img
+{
+    width: 90%;
+}
+.row
+{
+    display:flex;
+    padding:5px;
+}
+
+.columna
+{
+    flex:25%;
+    padding:5px;
+}
+
+.columna img
+{
+    margin-top: 5px;
+}
